@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>專業服務 — 顧問諮詢與教育訓練 | Brother AI</title>
+<meta name="description" content="Brother AI 提供 AI 導入顧問諮詢與教育訓練，搭配 14 天實施框架，協助企業快速且穩健地落地生成式 AI。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="../index.html">Brother AI</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">首頁</a></li>
+      <li><a href="../platform/index.html">平台</a></li>
+      <li><a href="index.html" class="is-active">專業服務</a></li>
+      <li><a href="../resources/index.html">資源中心</a></li>
+      <li><a href="#contact" class="btn btn--primary">預約諮詢</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="開啟選單">☰</button>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: var(--space-8);">
+  <div class="container">
+    <p class="eyebrow">專業服務</p>
+    <h1>不只是工具，<br />更是能落地的實施方法</h1>
+    <p class="hero__lead">從顧問諮詢到教育訓練，Brother AI 的專業服務團隊陪你走完導入的每一步，確保平台真正被用起來。</p>
+  </div>
+</header>
+
+<section class="section" id="consulting">
+  <div class="container">
+    <div class="grid grid--2">
+      <div class="card reveal">
+        <p class="eyebrow">顧問諮詢</p>
+        <h3>AI 導入顧問</h3>
+        <p>由具備企業場景經驗的顧問，協助盤點現有流程、設計 Agent 架構，並規劃資料治理與模型選型策略。</p>
+        <p class="form-note">典型導入週期：4–6 週</p>
+      </div>
+      <div class="card reveal" id="training">
+        <p class="eyebrow">教育訓練</p>
+        <h3>企業教育訓練方案</h3>
+        <p>針對不同角色（業務、客服、工程團隊）設計對應的培訓內容，確保上線後使用率能持續維持。</p>
+        <p class="form-note">提供線上與現場兩種形式</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <p class="eyebrow">實施框架</p>
+    <h2>14 天導入流程</h2>
+    <div class="grid grid--4">
+      <div class="card reveal">
+        <div class="stat__value" style="font-size:28px;">01</div>
+        <h4>諮詢與盤點</h4>
+        <p>了解現有系統、資料與導入目標。</p>
+      </div>
+      <div class="card reveal">
+        <div class="stat__value" style="font-size:28px;">02</div>
+        <h4>架構設計</h4>
+        <p>規劃 Agent 流程與模型策略。</p>
+      </div>
+      <div class="card reveal">
+        <div class="stat__value" style="font-size:28px;">03</div>
+        <h4>建置與整合</h4>
+        <p>在 Agent Builder 中建立流程並串接系統。</p>
+      </div>
+      <div class="card reveal">
+        <div class="stat__value" style="font-size:28px;">04</div>
+        <h4>上線與訓練</h4>
+        <p>正式上線並展開團隊教育訓練。</p>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:24px;">
+      <div class="stat__value" style="font-size:28px;">05</div>
+      <h4>監控與優化</h4>
+      <p>持續追蹤使用率與準確度，滾動調整知識庫與流程設計。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="grid grid--2">
+      <div>
+        <p class="eyebrow">聯繫我們</p>
+        <h2>預約免費諮詢</h2>
+        <p class="prose">填寫表單，我們會在一個工作天內與你聯繫，安排 20-30 分鐘的初步諮詢。</p>
+      </div>
+      <div class="card">
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">姓名</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-field">
+            <label for="company">公司名稱</label>
+            <input id="company" name="company" type="text" />
+          </div>
+          <div class="form-field">
+            <label for="message">想了解的內容</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">送出諮詢表單</button>
+          <p class="form-note" style="margin-top:12px;">此為靜態網站示範表單；正式版本請串接 Formspree 或其他表單服務。</p>
+          <div class="form-success" id="contact-success">感謝你的填寫，我們會盡快與你聯繫！</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="nav__brand" href="../index.html">Brother AI</a>
+        <p style="margin-top:12px; max-width: 32ch;">Agent 自動化系統與 LLM Gateway，協助企業打造可信賴的生成式 AI 應用。</p>
+      </div>
+      <div>
+        <h4>平台</h4>
+        <ul>
+          <li><a href="../platform/index.html">Agent Builder</a></li>
+          <li><a href="../platform/index.html#gateway">AI Gateway</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>專業服務</h4>
+        <ul>
+          <li><a href="#consulting">AI 顧問諮詢</a></li>
+          <li><a href="#training">教育訓練</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>資源中心</h4>
+        <ul>
+          <li><a href="../resources/index.html">案例分享</a></li>
+          <li><a href="../resources/index.html">部落格</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Brother AI. All rights reserved.</span>
+      <span>隱私權政策 · 服務條款</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
