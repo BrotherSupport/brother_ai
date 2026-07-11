@@ -545,6 +545,89 @@ p { margin: 0 0 var(--space-4); color: var(--muted); }
   html { scroll-behavior: auto; }
 }
 
+/* Tables (service tiers / comparison matrix) */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+  font-size: 15px;
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.table thead th {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+  background: var(--soft);
+}
+
+.table tbody tr:last-child td { border-bottom: none; }
+
+.table tbody tr.is-recommended { background: rgba(217, 119, 6, 0.05); }
+
+.table td strong, .table th strong { color: var(--ink); }
+
+/* Tier / pricing card */
+.tier-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tier-card__price {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.tier-card ul {
+  margin: var(--space-3) 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.tier-card li { margin-bottom: 6px; }
+
+.tier-card--featured {
+  border-color: var(--amber);
+  box-shadow: var(--shadow-lift);
+}
+
+/* Guarantee badges */
+.badge-row {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--warm);
+  border: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+
 /* Deployment badge (architecture diagram helper) */
 .arch {
   display: flex;
