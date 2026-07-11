@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>解決方案 — Agent 開發平台、Agent Builder、AI Gateway | Brother AI</title>
+<meta name="description" content="Agent 開發平台涵蓋 Agent Builder（no-code 打造專屬 AI Agent）、AI Gateway（企業級模型入口）與 Agent 自動化系統（CrewAI 驅動的任務自動化），四大解決方案協助企業從對話到自動化任務全面落地。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="../index.html">Brother AI</a>
+    <ul class="nav__links">
+      <li><a href="../index.html">首頁</a></li>
+      <li class="nav__item--dropdown">
+        <a href="index.html" class="is-active">解決方案</a>
+        <ul class="nav__dropdown">
+          <li><a href="#agent-platform"><span class="nav__dropdown-title">Agent 開發平台</span><span class="nav__dropdown-desc">AI Agent 開發平台總覽</span></a></li>
+          <li><a href="#agent-builder"><span class="nav__dropdown-title">Agent Builder</span><span class="nav__dropdown-desc">No-code 打造專屬 AI Agent 的完整工具箱</span></a></li>
+          <li><a href="#ai-gateway"><span class="nav__dropdown-title">AI Gateway</span><span class="nav__dropdown-desc">企業級模型入口（測試中）</span></a></li>
+          <li><a href="#agent-auto-system"><span class="nav__dropdown-title">Agent 自動化系統</span><span class="nav__dropdown-desc">CrewAI 驅動的任務自動化系統</span></a></li>
+        </ul>
+      </li>
+      <li class="nav__item--dropdown">
+        <a href="../services/index.html">專業服務</a>
+        <ul class="nav__dropdown">
+          <li><a href="../services/index.html"><span class="nav__dropdown-title">服務總覽</span><span class="nav__dropdown-desc">AI 教育訓練與企業顧問服務完整介紹</span></a></li>
+          <li><a href="../services/index.html#consulting"><span class="nav__dropdown-title">AI 顧問服務</span><span class="nav__dropdown-desc">從策略規劃到系統導入，全程專業支援</span></a></li>
+          <li><a href="../services/index.html#training"><span class="nav__dropdown-title">教育訓練</span><span class="nav__dropdown-desc">MaiGPT 應用實戰、開發者與管理者培訓</span></a></li>
+        </ul>
+      </li>
+      <li><a href="../resources/index.html">資源中心</a></li>
+      <li><a href="../services/index.html#contact" class="btn btn--primary">預約諮詢</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="開啟選單">☰</button>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: var(--space-8);">
+  <div class="container">
+    <p class="eyebrow">解決方案</p>
+    <h1>一個平台，<br />打造你的專屬工作助理</h1>
+    <p class="hero__lead">從無程式碼建置 AI Agent，到統一管理多模型呼叫，再到自動化執行整段業務任務——四大解決方案共同組成 Brother AI 的核心能力。</p>
+  </div>
+</header>
+
+<!-- Overview cards -->
+<section class="section" id="agent-platform">
+  <div class="container">
+    <p class="eyebrow">總覽</p>
+    <h2>Agent 開發平台</h2>
+    <p class="prose">傳統導入 AI 需要開發團隊、複雜系統與漫長時程；Brother AI 的 Agent 開發平台讓業務人員也能零程式碼打造智能客服、數據分析工具與內容生成系統，數小時內即可上線部署。</p>
+
+    <div class="grid grid--3" style="margin-top: var(--space-8);">
+      <div class="card solution-card reveal">
+        <div class="solution-card__head">
+          <span class="solution-card__icon">🤖</span>
+          <div>
+            <h3 class="solution-card__title">Agent 開發平台</h3>
+            <span class="solution-card__subtitle">AI Agent 開發平台</span>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="mock-bubble mock-bubble--blue">調閱本月前 10 名業績的業務員名單</div>
+          <div class="mock-response">已從 Google Sheets 取得數據並排序完成。第一名：王小明 $2.3M（+35%）。完整名單已匯出至 Excel 並上傳雲端。</div>
+          <div class="mock-status">🔗 已執行：讀取 Google Sheets → 匯出 Excel</div>
+        </div>
+        <div class="tag-row">
+          <span class="tag-pill">零程式碼</span>
+          <span class="tag-pill">視覺化設定</span>
+          <span class="tag-pill">MCP 整合</span>
+        </div>
+        <div class="solution-card__stats">
+          <div><div class="solution-card__stat-value">零程式碼</div><div class="solution-card__stat-label">業務人員可操作</div></div>
+          <div><div class="solution-card__stat-value">數小時</div><div class="solution-card__stat-label">即可上線部署</div></div>
+          <div><div class="solution-card__stat-value">MCP</div><div class="solution-card__stat-label">工具串接標準</div></div>
+        </div>
+        <a class="solution-card__link" href="#agent-platform-detail">了解更多 →</a>
+      </div>
+
+      <div class="card solution-card reveal" id="agent-builder">
+        <div class="solution-card__head">
+          <span class="solution-card__icon">⚙️</span>
+          <div>
+            <h3 class="solution-card__title">Agent Builder</h3>
+            <span class="solution-card__subtitle">No-code 打造專屬 AI Agent 的完整工具箱</span>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="mock-bubble mock-bubble--purple">我想建立一個能查詢訂單狀態的 Agent</div>
+          <div class="mock-response">已自動配置（無需程式碼）：流程圖設計 → 資料來源連接 → 自然語言介面 → 測試通過。Agent 已部署，立即可用！</div>
+          <div class="mock-status">🔗 快速部署完成</div>
+        </div>
+        <div class="tag-row">
+          <span class="tag-pill">無需程式碼</span>
+          <span class="tag-pill">圖形化流程</span>
+          <span class="tag-pill">即時整合</span>
+        </div>
+        <div class="solution-card__stats">
+          <div><div class="solution-card__stat-value">完整工具箱</div><div class="solution-card__stat-label">No-code 建置</div></div>
+          <div><div class="solution-card__stat-value">一鍵部署</div><div class="solution-card__stat-label">快速上線</div></div>
+          <div><div class="solution-card__stat-value">視覺化編輯</div><div class="solution-card__stat-label">拖拉即用</div></div>
+        </div>
+        <a class="solution-card__link" href="#agent-builder-detail">了解更多 →</a>
+      </div>
+
+      <div class="card solution-card reveal" id="ai-gateway">
+        <div class="solution-card__head">
+          <span class="solution-card__icon">🔀</span>
+          <div>
+            <h3 class="solution-card__title">AI Gateway</h3>
+            <span class="solution-card__subtitle">企業級模型入口</span>
+          </div>
+          <span class="solution-card__status">測試中</span>
+        </div>
+        <div class="mock">
+          <div class="mock-bubble mock-bubble--green">幫我用一個 API 同時接 Claude 與 GPT，主力掛掉要自動切換</div>
+          <div class="mock-response">已透過 Gateway 路由：主用 Claude，逾時自動 fallback 至 GPT，用量與費用統一記錄。</div>
+          <div class="mock-status">🔗 模型路由已生效</div>
+        </div>
+        <div class="tag-row">
+          <span class="tag-pill">一個 API 串接 6 家 LLM</span>
+          <span class="tag-pill">BYOK 自帶金鑰</span>
+          <span class="tag-pill">自動 fallback</span>
+        </div>
+        <div class="solution-card__stats">
+          <div><div class="solution-card__stat-value">6 家 LLM</div><div class="solution-card__stat-label">單一 API</div></div>
+          <div><div class="solution-card__stat-value">BYOK</div><div class="solution-card__stat-label">自帶金鑰</div></div>
+          <div><div class="solution-card__stat-value">測試中</div><div class="solution-card__stat-label">開放預約</div></div>
+        </div>
+        <a class="solution-card__link" href="#ai-gateway-detail">了解更多 →</a>
+      </div>
+
+      <div class="card solution-card reveal" id="agent-auto-system">
+        <div class="solution-card__head">
+          <span class="solution-card__icon">🔁</span>
+          <div>
+            <h3 class="solution-card__title">Agent 自動化系統</h3>
+            <span class="solution-card__subtitle">CrewAI 驅動的任務自動化平台</span>
+          </div>
+        </div>
+        <div class="mock">
+          <div class="mock-bubble mock-bubble--blue">每天早上幫我爬競品官網、整理成報表寄給我</div>
+          <div class="mock-response">已建立 Pipeline Job：網頁爬取 → 試算表整理 → PDF 報表產出 → Email 寄送。自我校驗通過，品質評分 92 分。</div>
+          <div class="mock-status">🔗 已排程執行，下次觸發時間已設定</div>
+        </div>
+        <div class="tag-row">
+          <span class="tag-pill">11 種任務類型</span>
+          <span class="tag-pill">多 LLM 自動 fallback</span>
+          <span class="tag-pill">自我校正</span>
+        </div>
+        <div class="solution-card__stats">
+          <div><div class="solution-card__stat-value">11 種</div><div class="solution-card__stat-label">內建任務類型</div></div>
+          <div><div class="solution-card__stat-value">3 家模型</div><div class="solution-card__stat-label">OpenAI / Claude / Gemini</div></div>
+          <div><div class="solution-card__stat-value">0–100 分</div><div class="solution-card__stat-label">獨立品質評分</div></div>
+        </div>
+        <a class="solution-card__link" href="#agent-auto-system-detail">了解更多 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Agent Platform detail -->
+<section class="section section--soft" id="agent-platform-detail">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div class="feature-row__text">
+        <p class="eyebrow">預建解決方案模板</p>
+        <h2>不用從零開始，直接套用場景模板</h2>
+        <ul>
+          <li><strong>Text2SQL Agent：</strong>將自然語言轉換為 SQL、執行查詢、產生圖表並同步至 Slack</li>
+          <li><strong>AI 客服助理：</strong>結合知識庫與歷史對話，即時建議最佳回覆</li>
+          <li><strong>產品手冊助理：</strong>檢索文件並支援多語言回覆</li>
+          <li><strong>發票掃描助理：</strong>自動 OCR 辨識、記帳並整合 ERP 系統</li>
+          <li><strong>行銷素材生成器：</strong>依品牌風格指南自動產出宣傳圖像</li>
+        </ul>
+      </div>
+      <div class="feature-row__art">場景模板選擇畫面</div>
+    </div>
+
+    <div class="feature-row is-reverse reveal">
+      <div class="feature-row__text">
+        <p class="eyebrow">人機協作</p>
+        <h2>AI 判斷何時該交給真人</h2>
+        <p>當 AI 遇到無法處理的複雜問題時，會智慧判斷是否轉接真人客服，同時保留完整對話脈絡，並提供 AI 生成的回覆建議，讓真人客服能更快接手。</p>
+      </div>
+      <div class="feature-row__art">AI 轉真人交接畫面</div>
+    </div>
+
+    <div class="feature-row reveal">
+      <div class="feature-row__text">
+        <p class="eyebrow">工具整合與部署通路</p>
+        <h2>串接你既有的系統與通路</h2>
+        <p>支援 MCP 協定與 RESTful API，可串接 Gmail、Google Calendar、GitHub、資料庫等企業系統；部署通路涵蓋 LINE、Messenger、Instagram、官網嵌入、API、Telegram、WhatsApp 與 Azure Bot Framework。</p>
+      </div>
+      <div class="feature-row__art">多通路部署設定畫面</div>
+    </div>
+  </div>
+</section>
+
+<!-- Agent Builder + Gateway detail -->
+<section class="section" id="agent-builder-detail">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div class="feature-row__text">
+        <p class="eyebrow">Agent Builder</p>
+        <h2>拖拉即用的視覺化流程編輯器</h2>
+        <p>用低程式碼／無程式碼的方式設計觸發條件與執行動作，讓非工程背景的團隊也能建立可靠的自動化流程。</p>
+        <ul>
+          <li>視覺化流程編輯器，拖拉組裝觸發 → 條件 → 動作</li>
+          <li>內建常見整合：Slack、Email、CRM、內部知識庫</li>
+          <li>版本管理與測試模式，上線前先行驗證流程</li>
+        </ul>
+      </div>
+      <div class="feature-row__art">Agent Builder 流程編輯器畫面</div>
+    </div>
+
+    <div class="feature-row is-reverse reveal" id="ai-gateway-detail">
+      <div class="feature-row__text">
+        <p class="eyebrow">AI Gateway</p>
+        <h2>統一的企業級模型入口</h2>
+        <p>集中管理不同模型供應商的 API 金鑰、用量與成本，並提供呼叫層級的紀錄與防護規則，一個 API 即可串接 6 家 LLM。</p>
+        <ul>
+          <li>多模型路由：OpenAI、Anthropic、開源模型可自由切換</li>
+          <li>BYOK（自帶金鑰）與集中式用量計量、成本控管</li>
+          <li>主力模型逾時／異常時自動 fallback，呼叫層級 Guardrails 與可觀測性</li>
+        </ul>
+        <span class="chip chip--indigo">目前測試中，開放預約體驗</span>
+      </div>
+      <div class="feature-row__art">Gateway 用量與成本儀表板畫面</div>
+    </div>
+  </div>
+</section>
+
+<!-- Agent Auto System detail -->
+<section class="section section--warm" id="agent-auto-system-detail">
+  <div class="container">
+    <p class="eyebrow">Agent 自動化系統</p>
+    <h2>把整段業務任務交給背景 Agent 執行</h2>
+    <p class="prose">Agent 自動化系統由 CrewAI 驅動，使用者透過網頁介面定義任務、以 API 觸發，交由背景 Agent 執行並內建品質把關機制。原始碼開源於
+      <a href="https://github.com/BrotherSupport/agent_auto_system" style="color:var(--indigo-deep); text-decoration:underline;" target="_blank" rel="noopener">github.com/BrotherSupport/agent_auto_system</a>。</p>
+
+    <div class="grid grid--3" style="margin-top: var(--space-8);">
+      <div class="card reveal">
+        <div class="card__icon">🧩</div>
+        <h4>11 種任務類型</h4>
+        <p>涵蓋表單提交、網頁爬取、試算表讀取、Email 寄送、PDF 報表產出、任務申請等場景，並可串成 Pipeline 依序執行多個自動化。</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">🔀</div>
+        <h4>多 LLM 架構</h4>
+        <p>每次執行可選擇 OpenAI、Anthropic Claude 或 Google Gemini，並依任務類型設定溫度參數；同供應商內建跨模型 fallback，應對短暫中斷。</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">🔄</div>
+        <h4>自我校正執行</h4>
+        <p>驗證層會依任務規則檢查每次結果；失敗時自動重新執行，並將前次錯誤訊息注入提示詞，讓 LLM 自我修正。</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">📊</div>
+        <h4>獨立品質評分</h4>
+        <p>由獨立 LLM 評審對每次結果進行 0–100 分評分並附上信心指標；評審模型與產出模型不同，避免分數虛高。</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">💰</div>
+        <h4>資源與成本追蹤</h4>
+        <p>完整記錄每次執行的 token 用量與美元成本估算，並可透過統計端點彙總分析。</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">⚡</div>
+        <h4>非同步執行架構</h4>
+        <p>後端採 FastAPI，立即回傳 202 並於背景執行；前端透過 SSE 每 0.5 秒更新即時進度，開發流程包含 380 組測試、mypy 型別檢查與 ruff 靜態分析。</p>
+      </div>
+    </div>
+
+    <div class="arch reveal" style="margin-top: var(--space-8);">
+      <div class="arch__node">使用者定義任務<br />（Web 介面 / API）</div>
+      <span class="arch__arrow">→</span>
+      <div class="arch__node">Harness 層<br />（模型選擇 / 驗證 / 重試 / 計費）</div>
+      <span class="arch__arrow">→</span>
+      <div class="arch__node">CrewAI Agent<br />執行任務</div>
+      <span class="arch__arrow">→</span>
+      <div class="arch__node">獨立 LLM 評審<br />品質評分</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;">
+      <h2>想看看解決方案實際運作方式？</h2>
+      <p class="prose" style="margin:0 auto var(--space-6);">預約一場 20 分鐘的產品導覽，我們會依照你的場景示範 Agent Builder、AI Gateway 與 Agent 自動化系統的搭配方式。</p>
+      <div class="btn-row" style="justify-content:center;">
+        <a class="btn btn--primary" href="../services/index.html#contact">預約產品導覽</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="nav__brand" href="../index.html">Brother AI</a>
+        <p style="margin-top:12px; max-width: 32ch;">Agent 自動化系統與 LLM Gateway，協助企業打造可信賴的生成式 AI 應用。</p>
+      </div>
+      <div>
+        <h4>解決方案</h4>
+        <ul>
+          <li><a href="#agent-platform">Agent 開發平台</a></li>
+          <li><a href="#agent-builder">Agent Builder</a></li>
+          <li><a href="#ai-gateway">AI Gateway</a></li>
+          <li><a href="#agent-auto-system">Agent 自動化系統</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>專業服務</h4>
+        <ul>
+          <li><a href="../services/index.html">AI 顧問諮詢</a></li>
+          <li><a href="../services/index.html#training">教育訓練</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>資源中心</h4>
+        <ul>
+          <li><a href="../resources/index.html">案例分享</a></li>
+          <li><a href="../resources/index.html">部落格</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Brother AI. All rights reserved.</span>
+      <span>隱私權政策 · 服務條款</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -177,6 +177,96 @@ p { margin: 0 0 var(--space-4); color: var(--muted); }
   .nav__toggle { display: block; }
 }
 
+/* Nav dropdown ("解決方案" / "專業服務") */
+.nav__item--dropdown {
+  position: relative;
+}
+
+.nav__item--dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.nav__item--dropdown > a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+  margin-top: -3px;
+}
+
+.nav__item--dropdown.is-open > a::after {
+  transform: rotate(-135deg);
+  margin-top: 3px;
+}
+
+.nav__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: var(--space-4);
+  width: 320px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lift);
+  padding: var(--space-4);
+  list-style: none;
+}
+
+@media (min-width: 761px) {
+  .nav__item--dropdown:hover .nav__dropdown,
+  .nav__item--dropdown.is-open .nav__dropdown {
+    display: block;
+  }
+}
+
+.nav__dropdown li + li { margin-top: var(--space-3); }
+
+.nav__dropdown a {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.nav__dropdown a:hover { background: var(--soft); }
+
+.nav__dropdown-title {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.nav__dropdown-desc {
+  font-size: 13px;
+  color: var(--faint);
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .nav__dropdown {
+    display: none;
+    position: static;
+    transform: none;
+    width: auto;
+    margin: var(--space-2) 0 0;
+    box-shadow: none;
+    border: none;
+    background: var(--soft);
+  }
+  .nav__item--dropdown.is-open .nav__dropdown { display: block; }
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -655,3 +745,126 @@ p { margin: 0 0 var(--space-4); color: var(--muted); }
   color: var(--sand);
   font-size: 20px;
 }
+
+/* Solution cards ("解決方案" overview grid) */
+.solution-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.solution-card__head {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.solution-card__icon {
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.solution-card__title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  margin: 0;
+}
+
+.solution-card__subtitle {
+  font-size: 13px;
+  color: var(--faint);
+}
+
+.solution-card__status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--indigo-deep);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mock {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: var(--space-4);
+  font-size: 13px;
+}
+
+.mock-bubble {
+  border-radius: 10px;
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+  color: #fff;
+  font-weight: 500;
+}
+
+.mock-bubble--blue { background: #2f6fed; }
+.mock-bubble--purple { background: var(--indigo); }
+.mock-bubble--green { background: var(--green-deep); }
+
+.mock-response {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: var(--space-3);
+  color: var(--muted);
+  margin-bottom: var(--space-2);
+}
+
+.mock-status {
+  font-size: 12px;
+  color: var(--green-deep);
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag-pill {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--warm);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.solution-card__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.solution-card__stat-value {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.solution-card__stat-label {
+  font-size: 11px;
+  color: var(--faint);
+}
+
+.solution-card__link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--indigo-deep);
+  text-decoration: none;
+}
+
+.solution-card__link:hover { text-decoration: underline; }
