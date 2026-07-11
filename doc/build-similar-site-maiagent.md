@@ -8,6 +8,13 @@ Services, (3) Resource Center. The generic multi-SKU "產品" (Product catalog)
 section from the reference site is intentionally excluded — we present the
 agent system + gateway directly instead of a broad product matrix.
 
+Visual design direction: **Slima Warm Editorial** (manuscript / literary
+style), reference site https://slima.ai/zh-TW, full spec saved at
+[`doc/design/slima-warm-editorial.md`](design/slima-warm-editorial.md).
+This replaces the glossy/SaaS visual tone often used on platforms like
+maiagent.ai with a warm-paper, serif-headline, editorial aesthetic — content
+structure below stays the same, only the visual system changes.
+
 ## 1. Site Structure
 
 ```
@@ -79,15 +86,49 @@ Jekyll natively).
 - Newsletter signup (can use a third-party form service like Formspree/
   Mailchimp embed since GitHub Pages has no backend)
 
-## 4. Design & Branding
-- Choose a consistent type scale, color palette, and spacing system
-- Reuse one component library across pages (buttons, cards, nav, footer)
-- Optimize for mobile first; sections should stack cleanly
+## 4. Design & Branding — Slima Warm Editorial
+
+Full spec: [`doc/design/slima-warm-editorial.md`](design/slima-warm-editorial.md)
+(source: [awesome-claude-design/slima.md](https://github.com/yennanliu/awesome-claude-design/blob/main/design-md/warm/slima.md)).
+Key rules to apply across all four pages:
+
+- **Palette:** warm paper neutrals as the base —
+  `--bg #ffffff`, `--soft #faf9f6`, `--warm #f3f1ec`, `--line #ececea`,
+  `--ink #0a0a0a`, `--muted #5a5a60`, `--sand #c5b6a0` for quiet decorative
+  rules. Accents are functional only: `--amber #d97706` (CTA emphasis),
+  `--green #4ea87a` (success/consistency), `--red #d0463a` (alert/conflict),
+  `--indigo #6366f1` (links / AI notes). Never fill a whole section with an
+  accent color.
+- **Typography:** `IBM Plex Serif` (Georgia fallback) for all headlines/hero
+  copy at 40–56px — this is the signature look, so the hero and section
+  titles across Landing, Platform, Services, and Resources must stay serif.
+  `Inter` for body/UI copy at 16–18px with a relaxed 60–70ch reading measure.
+  For zh-TW copy, pair the serif with a Noto Serif CJK stack. Type scale:
+  13/14/16/18/22/28/40/56.
+- **Layout:** single-column scrolling, content max-width ~1100–1200px
+  centered, generous whitespace (4px grid, spacing scale
+  4/8/12/16/24/32/48/64/96). Feature sections alternate text/screenshot.
+- **Components:** solid `--ink` (or `--amber` for emphasis) pill buttons, no
+  gradients/glow; cards use `--warm`/`--soft` fill with 1px `--line` border
+  and modest radius (8–12px); paper-flat elevation only
+  (`0 1px 2px rgba(10,10,10,.04)` resting, `0 8px 24px rgba(10,10,10,.08)`
+  on hover) — no glassmorphism, neon, or heavy shadows.
+- **Motion:** quiet fade/rise on scroll reveal (200–350ms), no parallax or
+  spectacle animation; respect `prefers-reduced-motion`.
+- **Explicitly avoid:** dark-themed hero, all-sans SaaS headline treatment,
+  decorative gradients/orbs, glassmorphism, accent-flooded sections, cramped
+  layouts.
+- Real product screenshots (of the Agent Builder UI, Gateway dashboard, etc.)
+  should carry the persuasion in the Platform section, per the reference
+  site's approach — not stock imagery or illustration.
 
 ## 5. Tech Stack Recommendation
 - Static site generator: Astro or Eleventy (fast, simple, GitHub Pages
   friendly) — or Jekyll if staying inside GitHub Pages' native build
-- Styling: Tailwind CSS
+- Styling: Tailwind CSS, configured with the Slima palette/type tokens above
+  as custom theme values (colors, font families, spacing scale)
+- Fonts: self-host or load IBM Plex Serif + Inter (+ Noto Serif CJK for
+  zh-TW) via `@font-face` / Google Fonts
 - Forms: Formspree / Google Forms embed (no backend on GitHub Pages)
 - Analytics: Plausible or GA4 snippet
 
